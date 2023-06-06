@@ -1,7 +1,12 @@
-import { PageParam } from "@/types/Router";
+'use client'
 
-export default function ChannelPage({ params: { guildId, channelId } }: { params: { guildId: PageParam, channelId: PageParam } }) {
+import TextChannel from "@/components/channel/TextChannel";
+import { useEffect } from "react";
+
+export default function ChannelPage({ params: { guildId, channelId } }: { params: { guildId: string, channelId: string } }) {
+
+  
     return (
-        <div>{guildId}:{channelId}</div>
+        <TextChannel/>
     )
 }

@@ -1,7 +1,7 @@
-import { PageParam } from "@/types/Router";
+import { string } from "@/types/Router";
 
-export default function DirectMessagePage({ params: { userId } }: { params: { userId: PageParam } }) {
+export default async({ params: { userId } }: { params: { userId: string } }) => {
     return (
-        <div>{userId}</div>
+        <div>User: {userId}</div>
     )
 }
