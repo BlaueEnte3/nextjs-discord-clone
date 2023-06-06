@@ -9,7 +9,7 @@ export default function Sidebar() {
     return (
         <div className="flex w-80">
             <GuildSidebar />
-            <div className="w-60">
+            <div className="w-60 h-full">
                 <ChannelSidebar />
             </div>
         </div>

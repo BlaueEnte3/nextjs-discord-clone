@@ -13,7 +13,7 @@ export default function TextChannel() {
         { _id: "4", authorId: "1", content: "test", "channelId": "1", guildId: "1" },
 
     ]
-    for (let i = 0; i < 50; i++)
+    for (let i = 0; i < 150; i++)
         messages.push(m)
     const MessageList = () => messages.map((message, index) => {
         return <MessageNode message={message} key={index} />
@@ -21,7 +21,7 @@ export default function TextChannel() {
     return (
         <div className="relative flex flex-col flex-grow h-full">
             <TextChannelHeader />
-            <div style={{height:"calc(100vh - 48px)"}} className="flex flex-col overflow-x-hidden overflow-y-scroll mt-1 mb-2.5">
+            <div style={{height:"calc(100vh - 48px)"}} className="scrollbar flex flex-col overflow-x-hidden overflow-y-scroll mt-1 mb-2.5">
                 <MessageList />
             </div>
             <MessageInput />
