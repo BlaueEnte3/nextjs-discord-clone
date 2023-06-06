@@ -18,7 +18,7 @@ export default function GuildInteractionIcon({ children, onInteraction, href }: 
     }
     return (
         <div className="relative w-full">
-            <div onClick={onClick} className="cursor-pointer w-12 h-12 rounded-full mx-auto flex justify-center items-center text-red-500 bg-blue-200">
+            <div onClick={onClick} className="cursor-pointer w-12 h-12 rounded-full mx-auto flex justify-center items-center text-red-500 bg-brand-primary">
                 {children}
             </div>
             <GuildSidebarActiveIndicator isActive={isActive} />

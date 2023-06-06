@@ -35,9 +35,9 @@ export default function ChannelSidebar() {
         return <SidebarChannel channel={channel} />
     })
     return (
-        <div className="flex flex-col w-full h-full bg-blue-600">
+        <div className="flex flex-col w-full h-full bg-brand-secondary">
             <ChannelSidebarHeader />
-            <div className="mt-2 flex flex-col flex-grow overflow-x-hidden overflow-y-scroll space-y-2">
+            <div className="mt-2 flex flex-col flex-grow overflow-x-hidden overflow-y-scroll space-y-2 scrollbar px-2.5">
                 <ChannelList />
             </div>
             <SidebarUser />

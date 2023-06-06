@@ -2,18 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: rgb(39, 43, 65, 255);
+  --secondary: rgb(30, 35, 56, 255);
+  --tertiary: rgb(29, 37, 56, 255);
+  --dark:rgb(9, 17, 36, 255);
+  --content-primary: #fff;
+  --content-secondary: #454d5c;
+  --accent: #07b5ea;
+}
 .scrollbar::-webkit-scrollbar {
   width: 0.5rem;
 }
 
-/* Track */
 .scrollbar ::-webkit-scrollbar-track {
   display: none;
 }
 
-/* Handle */
 .scrollbar::-webkit-scrollbar-thumb {
-  background: red;
+  background: var(--dark);
   border-radius: 10px;
 }
 
