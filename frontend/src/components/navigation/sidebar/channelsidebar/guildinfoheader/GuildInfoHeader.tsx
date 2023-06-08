@@ -12,7 +12,9 @@ export default function GuildInfoHeader() {
                 <div className="text-content-primary">test</div>
                 <FontAwesomeIcon icon={dropdownOpen ? faChevronUp : faChevronDown} size="sm" className="text-content-secondary duration-300 transition-all ease-in-out" />
             </div>
-            <Dropdown open={dropdownOpen} setOpen={setDropdownOpen} />
+            <Dropdown open={dropdownOpen} setOpen={setDropdownOpen}>
+                Das ist ein dropdown
+            </Dropdown>
         </div>
     )
 }

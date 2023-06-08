@@ -23,6 +23,14 @@ export interface Message {
   guildId: string;
   authorId: string;
   content: string;
+  embed:MessageEmbed
+}
+export interface MessageEmbed {
+  title: string;
+  description: string;
+  color: string;
+  footer:string
+  iconURL:string
 }
 
 export interface User {
