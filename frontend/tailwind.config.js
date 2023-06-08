@@ -12,13 +12,13 @@ module.exports = {
           primary: "var(--primary)",
           secondary: "var(--secondary)",
           tertiary: "var(--tertiary)",
+          dark:"var(--dark)",
           accent: "var(--accent)",
         },
-        content:{
-          primary:"var(--content-primary)",
-          secondary:"var(--content-secondary)",
-        }
-      
+        content: {
+          primary: "var(--content-primary)",
+          secondary: "var(--content-secondary)",
+        },
       },
     },
   },

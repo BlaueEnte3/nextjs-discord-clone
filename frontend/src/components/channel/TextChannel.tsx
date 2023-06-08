@@ -15,14 +15,13 @@ export default function TextChannel() {
     ]
     for (let i = 0; i < 150; i++)
         messages.push(m)
-    const MessageList = () => messages.map((message, index) => {
-        return <MessageNode message={message} key={index} />
-    })
+
     return (
-        <div className="relative flex flex-col flex-grow h-full">
-            <TextChannelHeader />
-            <div style={{height:"calc(100vh - 48px)"}} className="scrollbar flex flex-col overflow-x-hidden overflow-y-scroll mt-1 mb-2.5">
-                <MessageList />
+        <div className="flex flex-col flex-auto">
+            <div className="scrollbar-dark flex flex-col overflow-x-hidden overflow-y-scroll mt-1 mb-2.5">
+                {messages.map((message, index) => {
+                    return <MessageNode message={message} key={index} />
+                })}
             </div>
             <MessageInput />
         </div>

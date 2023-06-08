@@ -6,29 +6,8 @@ import SidebarChannel from "./sidebarchannel/SidebarChannel";
 
 export default function ChannelSidebar() {
     const channels: Channel[] = [
-        { _id: "1", name: "test", type: "TEXT" },
-        { _id: "2", name: "test", type: "TEXT" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
-        { _id: "3", name: "test", type: "VOICE" },
+        { _id: "1", name: "test", type: "TEXT", guildId: "1" },
+        { _id: "2", name: "vc test", type: "VOICE", "guildId": "1" },
     ]
 
     const ChannelList = () => channels.map((channel, index) => {
@@ -37,7 +16,7 @@ export default function ChannelSidebar() {
     return (
         <div className="flex flex-col w-full h-full bg-brand-secondary">
             <ChannelSidebarHeader />
-            <div className="mt-2 flex flex-col flex-grow overflow-x-hidden overflow-y-scroll space-y-2 scrollbar px-2.5">
+            <div className="mt-2 flex flex-col flex-grow overflow-x-hidden overflow-y-scroll space-y-2 scrollbar-dark px-2.5">
                 <ChannelList />
             </div>
             <SidebarUser />

@@ -11,6 +11,7 @@ export interface Guild {
 export interface Channel {
   _id: string;
   name: string;
+  guildId: string;
   type: ChannelTypes;
 }
 
@@ -29,7 +30,7 @@ export interface User {
   avatarURL: string;
   name: string;
   status: StatusType;
-  guildIds:string[]
+  guildIds: string[];
 }
 
 export type StatusType = "ONLINE" | "IDLE" | "OFFLINE";
