@@ -148,7 +148,7 @@ app.post('/login', async (req: Request, res: Response) => {
 
 app.get('/profile', async (req: Request, res: Response) => {
   try {
-    const user = await User.findById(req['userId']); // Retrieve user ID from custom property
+    const user = await User.findById(req['userId']); 
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
     }
