@@ -22,9 +22,13 @@
 
 *::-webkit-scrollbar-thumb {
   border-radius: 10px;
-   background: var(--dark);
+  background: var(--dark);
 }
 
 .invisible-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+* {
+  transition: all .3s ease-in-out;
 }
